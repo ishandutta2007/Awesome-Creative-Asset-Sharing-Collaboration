@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#070a12" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Glowing Pill Gradient -->
+    <linearGradient id="pillGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9333ea" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="pillGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.1" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3" />
+      <circle cx="40" cy="40" r="1.5" fill="#64748b" fill-opacity="0.3" />
+    </pattern>
+
+    <!-- Filters -->
+    <filter id="blurGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" />
+    </filter>
+
+    <filter id="shadowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+
+    <style>
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 44px;
+        letter-spacing: -0.5px;
+      }
+      .subtitle-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 19px;
+        fill: #94a3b8;
+        letter-spacing: 0.2px;
+      }
+      .badge-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 12.5px;
+        letter-spacing: 0.5px;
+      }
+      .metric-label {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 11px;
+        fill: #64748b;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .metric-val {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        fill: #f1f5f9;
+      }
+
+      /* CSS Animations */
+      @keyframes floatSlow1 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(1deg); }
+      }
+      @keyframes floatSlow2 {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(12px) rotate(-1.5deg); }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.15); }
+      }
+      @keyframes pulseGlow2 {
+        0%, 100% { opacity: 0.25; transform: scale(1); }
+        50% { opacity: 0.5; transform: scale(1.2); }
+      }
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes nodePulse {
+        0%, 100% { r: 5; opacity: 0.8; }
+        50% { r: 7.5; opacity: 1; }
+      }
+
+      .floating-card-1 {
+        animation: floatSlow1 7s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .floating-card-2 {
+        animation: floatSlow2 8.5s ease-in-out infinite;
+        transform-origin: center;
+      }
+      .glow-orb-1 {
+        animation: pulseGlow 6s ease-in-out infinite;
+        transform-origin: 200px 100px;
+      }
+      .glow-orb-2 {
+        animation: pulseGlow2 8s ease-in-out infinite;
+        transform-origin: 1050px 300px;
+      }
+      .flow-path {
+        stroke-dasharray: 6 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .pulsing-node {
+        animation: nodePulse 3s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- LAYER 0: Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Ambient Glowing Orbs (Dynamic in background) -->
+  <circle class="glow-orb-1" cx="200" cy="120" r="180" fill="url(#glowGrad1)" filter="url(#blurGlow)" />
+  <circle class="glow-orb-2" cx="1020" cy="280" r="210" fill="url(#glowGrad2)" filter="url(#blurGlow)" />
+
+  <!-- Blueprint Pattern Grid -->
+  <rect width="1200" height="420" rx="16" fill="url(#grid)" />
+
+  <!-- Dynamic Asset Flow Background Elements (Left & Right Flanks) -->
+  <g opacity="0.45">
+    <path class="flow-path" d="M 80 80 Q 220 180, 110 320" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <path class="flow-path" d="M 1080 90 Q 940 210, 1120 340" fill="none" stroke="#a855f7" stroke-width="2" />
+    
+    <!-- Flow Connector Nodes -->
+    <circle cx="80" cy="80" r="4" fill="#38bdf8" />
+    <circle cx="110" cy="320" r="4" fill="#38bdf8" />
+    <circle cx="1080" cy="90" r="4" fill="#a855f7" />
+    <circle cx="1120" cy="340" r="4" fill="#a855f7" />
+  </g>
+
+  <!-- LAYER 1: Dynamic Decorative Cards (Positioned in flanking wings, avoiding text area) -->
+  <!-- Left Side: Interactive Asset Card -->
+  <g class="floating-card-1" filter="url(#shadowFilter)">
+    <g transform="translate(60, 160)">
+      <rect width="150" height="120" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+      <rect x="14" y="14" width="34" height="34" rx="8" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="1" />
+      <!-- Media Icon -->
+      <path d="M 23 35 L 29 27 L 35 33 L 39 29 L 43 35 Z" fill="#38bdf8" opacity="0.9" />
+      <circle cx="28" cy="23" r="2.5" fill="#38bdf8" />
+      <!-- Content lines -->
+      <rect x="58" y="18" width="76" height="8" rx="4" fill="#64748b" opacity="0.6" />
+      <rect x="58" y="32" width="50" height="6" rx="3" fill="#475569" opacity="0.5" />
+      <line x1="14" y1="62" x2="136" y2="62" stroke="#334155" stroke-dasharray="2 2" />
+      <!-- Mini Tags -->
+      <rect x="14" y="74" width="52" height="18" rx="5" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-width="0.8" />
+      <text x="40" y="87" fill="#7dd3fc" font-size="9" font-family="sans-serif" font-weight="600" text-anchor="middle">4K RAW</text>
+      <rect x="72" y="74" width="62" height="18" rx="5" fill="#10b981" fill-opacity="0.12" stroke="#10b981" stroke-width="0.8" />
+      <text x="103" y="87" fill="#6ee7b7" font-size="9" font-family="sans-serif" font-weight="600" text-anchor="middle">SYNCED</text>
+      <circle class="pulsing-node" cx="136" cy="14" r="5" fill="#10b981" />
+    </g>
+  </g>
+
+  <!-- Right Side: Collaboration / Versioning Card -->
+  <g class="floating-card-2" filter="url(#shadowFilter)">
+    <g transform="translate(990, 150)">
+      <rect width="150" height="135" rx="12" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2" />
+      <rect x="14" y="14" width="34" height="34" rx="8" fill="#9333ea" fill-opacity="0.25" stroke="#c084fc" stroke-width="1" />
+      <!-- Collab Nodes Icon -->
+      <circle cx="27" cy="27" r="4" fill="#c084fc" />
+      <circle cx="37" cy="35" r="3" fill="#38bdf8" />
+      <path d="M 27 27 L 37 35" stroke="#94a3b8" stroke-width="1.5" />
+      <!-- Content lines -->
+      <rect x="58" y="18" width="76" height="8" rx="4" fill="#64748b" opacity="0.6" />
+      <rect x="58" y="32" width="52" height="6" rx="3" fill="#475569" opacity="0.5" />
+      <line x1="14" y1="62" x2="136" y2="62" stroke="#334155" stroke-dasharray="2 2" />
+      <!-- Avatars -->
+      <circle cx="28" cy="84" r="10" fill="#38bdf8" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1" />
+      <circle cx="44" cy="84" r="10" fill="#ec4899" fill-opacity="0.3" stroke="#ec4899" stroke-width="1" />
+      <circle cx="60" cy="84" r="10" fill="#10b981" fill-opacity="0.3" stroke="#10b981" stroke-width="1" />
+      <text x="80" y="88" fill="#94a3b8" font-size="10" font-family="sans-serif" font-weight="600">+12</text>
+      <!-- Activity pulse -->
+      <rect x="14" y="104" width="122" height="18" rx="5" fill="#8b5cf6" fill-opacity="0.12" stroke="#8b5cf6" stroke-width="0.8" />
+      <text x="75" y="117" fill="#d8b4fe" font-size="9" font-family="sans-serif" font-weight="600" text-anchor="middle">Realtime Edit Active</text>
+      <circle class="pulsing-node" cx="136" cy="14" r="5" fill="#38bdf8" />
+    </g>
+  </g>
+
+  <!-- LAYER 2: FOREGROUND CONTENT (Protected high-contrast area with backdrop shield) -->
+  <g transform="translate(600, 0)">
+    <!-- Optional subtle center glow backing for highest text readability -->
+    <ellipse cx="0" cy="205" rx="380" ry="160" fill="#0b1120" fill-opacity="0.7" filter="url(#shadowFilter)" />
+
+    <!-- Top Badge / Category Pill -->
+    <g transform="translate(0, 72)">
+      <rect x="-195" y="-16" width="390" height="32" rx="16" fill="#1e293b" fill-opacity="0.95" stroke="#475569" stroke-width="1.2" filter="url(#shadowFilter)" />
+      <circle cx="-170" cy="0" r="4.5" fill="#38bdf8" />
+      <text x="8" y="4.5" text-anchor="middle" fill="#38bdf8" class="badge-text">
+        CURATED ECOSYSTEM &amp; ARCHITECTURE GUIDE
+      </text>
+    </g>
+
+    <!-- Main Title (Gradient Foreground) -->
+    <text x="0" y="152" text-anchor="middle" class="title-text" fill="url(#accentGrad)" filter="url(#shadowFilter)">
+      Creative Asset Sharing &amp; Collaboration
+    </text>
+
+    <!-- Subtitle (Clear high-contrast foreground) -->
+    <text x="0" y="196" text-anchor="middle" class="subtitle-text">
+      Digital Asset Management (DAM) · Brand Portals · Self-Hosted Design Workspaces
+    </text>
+
+    <!-- Key Ecosystem Metric Pills (Foreground row) -->
+    <g transform="translate(0, 260)">
+      <!-- Pill 1: Enterprise SaaS -->
+      <g transform="translate(-250, 0)">
+        <rect x="-95" y="-22" width="190" height="44" rx="22" fill="#0f172a" stroke="#0284c7" stroke-width="1.2" filter="url(#shadowFilter)" />
+        <rect x="-95" y="-22" width="190" height="44" rx="22" fill="url(#pillGrad1)" />
+        <circle cx="-68" cy="0" r="10" fill="#0284c7" fill-opacity="0.3" stroke="#38bdf8" stroke-width="1" />
+        <path d="M -72 -3 L -65 -3 L -65 4 L -72 4 Z M -67 -6 L -67 -3" stroke="#38bdf8" stroke-width="1.2" fill="none" />
+        <text x="-48" y="-3" class="metric-label">ENTERPRISE DAM</text>
+        <text x="-48" y="13" class="metric-val">Adobe, Bynder, Figma</text>
+      </g>
+
+      <!-- Pill 2: Open Source -->
+      <g transform="translate(0, 0)">
+        <rect x="-115" y="-22" width="230" height="44" rx="22" fill="#0f172a" stroke="#7c3aed" stroke-width="1.2" filter="url(#shadowFilter)" />
+        <rect x="-115" y="-22" width="230" height="44" rx="22" fill="url(#pillGrad2)" />
+        <circle cx="-85" cy="0" r="10" fill="#7c3aed" fill-opacity="0.3" stroke="#c084fc" stroke-width="1" />
+        <path d="M -89 -2 L -85 -6 L -81 -2 M -85 -5 L -85 4" stroke="#c084fc" stroke-width="1.2" fill="none" />
+        <text x="-65" y="-3" class="metric-label">OPEN SOURCE &amp; SELF-HOSTED</text>
+        <text x="-65" y="13" class="metric-val">Penpot, Longpoint, Unopim</text>
+      </g>
+
+      <!-- Pill 3: Industry Scope -->
+      <g transform="translate(250, 0)">
+        <rect x="-95" y="-22" width="190" height="44" rx="22" fill="#0f172a" stroke="#059669" stroke-width="1.2" filter="url(#shadowFilter)" />
+        <rect x="-95" y="-22" width="190" height="44" rx="22" fill="url(#pillGrad3)" />
+        <circle cx="-68" cy="0" r="10" fill="#059669" fill-opacity="0.3" stroke="#34d399" stroke-width="1" />
+        <path d="M -72 3 L -68 -2 L -65 1 L -61 -4" stroke="#34d399" stroke-width="1.2" fill="none" />
+        <text x="-48" y="-3" class="metric-label">MARKET ADOPTION</text>
+        <text x="-48" y="13" class="metric-val">$13B TAM by 2030</text>
+      </g>
+    </g>
+
+    <!-- Bottom Metadata Details -->
+    <g transform="translate(0, 340)">
+      <text x="0" y="0" text-anchor="middle" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" letter-spacing="0.4px">
+        Continuous Community Updates · Factual Comparisons · Architecture Insights
+      </text>
+    </g>
+  </g>
+</svg>

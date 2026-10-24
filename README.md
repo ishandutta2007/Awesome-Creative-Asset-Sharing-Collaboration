@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="assets/banner.svg" alt="Awesome Creative Asset Sharing & Collaboration Banner" width="100%" />
+</div>
+
+<br/>
+
 # Awesome-Creative-Asset-Sharing-Collaboration
 
 ## Top Creative Asset Sharing & Collaboration Ecosystem
