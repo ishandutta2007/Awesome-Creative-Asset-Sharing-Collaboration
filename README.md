@@ -30,43 +30,29 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global Digital Asset Management (DAM) and creative collaboration market is estimated at **$6.6 billion to $6.7 billion in 2025** and projected to reach **$13 billion by 2030** (CAGR ~14–16%). The sector is **moderately fragmented yet steadily consolidating**, with entrenched multi-billion-dollar enterprise platforms (Adobe, Smartsheet) anchoring broad enterprise deployments while specialized, high-velocity providers (Figma, Bynder, Frontify, Canto) capture specialized design operations and digital brand asset niches.
 
 ## SaaS/Hosted Platforms
 
-
-
-| Product | Description | Pricing | Free Tier Limit |
-
-| :--- | :--- | :--- | :--- |
-
-| **[Adobe Creative Cloud Libraries](https://www.adobe.com/creativecloud.html)** | Shared collections of design elements (logos, colors, styles, graphics) that sync across Photoshop, Illustrator, InDesign, and Adobe Express. | Included with **Creative Cloud** subscriptions (from ~$22.99/mo for single app) . | **Free Creative Cloud members** get limited Libraries storage (specific limit not published). Paid plans include more storage . |
-
-| **[Frontify](https://www.frontify.com/)** | Brand management platform with asset libraries, guidelines, and collaboration workflows. | **Quote-only** (Essentials, Growth, Enterprise tiers). Small teams typically negotiate pricing below initial quotes; onboarding fees range **$2,000–$15,000+** . | **No free tier**. Demo via sales . |
-
-| **[Bynder](https://www.bynder.com/)** | Enterprise DAM with modular pricing, AI tagging, and brand management. | **Quote-only**. Typical annual cost for **25–50 users: $40,000–$75,000** . Professional services add **15–30%** of first-year contract value . | **No free tier**. Demo via sales . |
-
-| **[Brandfolder](https://brandfolder.com/)** | DAM with unlimited storage in most tiers, positioned as a more affordable Bynder alternative. | **Quote-only** (Premium, Enterprise). Typical annual cost for **25–50 users: $25,000–$50,000** . | **No free tier**. Demo via sales . |
-
-| **[Canto](https://www.canto.com/)** | DAM with a focus on ease of use and affordability for mid-sized teams. | **Quote-only**. Typical annual cost for **25–50 users: $20,000–$45,000** . A UK government contract listed **£34,226.79** for 3 years . | **No free tier**. Demo via sales . |
-
-| **[Lingo](https://www.lingoapp.com/)** | Asset library with Kits (visual folders) and Portals (content hubs) for brand distribution. | **Platform fee + per-editor pricing** (revised May 2025). Customizable add-ons for Consumers, Direct links, and Storage . Exact rates not published. | **No free tier**. Trial available via sales. |
-
-| **[Figma](https://www.figma.com/)** | Collaborative design platform with **Team Libraries** for shared components, variables, and styles. | **Professional Full seat**: **$16/mo** (annual) with unlimited files and team libraries . **Dev seat**: $12/mo. **Collab seat**: $3/mo . | **Starter (free)**: Limited files and projects, 500 AI credits/month. **Unlimited free viewers** for browsing and commenting . |
-
-| **[Sketch Cloud](https://www.sketch.com/)** | Mac design tool with cloud libraries for sharing symbols and styles. | **Standard**: **$12/editor/month** (billed yearly). **Private Cloud** available with setup fee . | **No free plan** beyond a 30-day trial. **Unlimited free viewers** for browsing and commenting . |
-
-| **[Zeroheight](https://zeroheight.com/)** | Design system documentation platform for sharing brand guidelines and component libraries. | **Starter**: **$49/editor/month** (billed yearly) or $59 monthly. Enterprise: custom . | **Free plan**: **1 Editor** only. **14-day Starter trial** . |
-
-
+| Product | Description | Company Size (Valuation / Revenue) | Pricing | Free Tier Limit |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Adobe Creative Cloud Libraries](https://www.adobe.com/creativecloud.html)** | Shared collections of design elements (logos, colors, styles, graphics) that sync across Photoshop, Illustrator, InDesign, and Adobe Express. | **~$146.5B Market Cap** ($23.8B FY2025 revenue) | From **$22.99/mo** (Single App annual plan billed monthly) or $59.99/mo (All Apps) | **Free tier (forever)**: Includes 5 GB pooled cloud storage and Creative Cloud Libraries access (1 GB browser / 5 GB desktop file upload limits) |
+| **[Figma](https://www.figma.com/)** | Collaborative design platform with **Team Libraries** for shared components, variables, and styles. | **~$19.3B Valuation** ($1.06B+ FY2025 revenue; IPO debut) | From **$12/editor/mo** billed annually ($15/mo monthly) for Figma Design Professional | **Free tier (forever)**: Starter plan includes 3 shared Figma files, unlimited personal drafts, unlimited free viewers/commenters, and 500 AI credits/mo |
+| **[Brandfolder](https://brandfolder.com/)** | DAM with AI tagging, multi-format transcoding, and curated brand portals. | **$155M Acquisition Value** (Parent Smartsheet: $8.4B PE buyout; $1.1B+ revenue) | From **$500/mo** (~$15,000/yr baseline deployment for Premium tier) | **No free tier**; no public self-serve trial (private guided sandbox available via sales demo) |
+| **[Bynder](https://www.bynder.com/)** | Enterprise DAM with modular architecture, AI tagging, digital rights management, and brand guidelines. | **~$600M Valuation** ($100M+ ARR at THL Partners acquisition) | From **$450/mo** (~$5,400 to $9,000/yr starting tier, scaling with users/storage) | **No free tier**; no public self-serve trial (guided demo and enterprise sandbox PoC available via sales) |
+| **[Frontify](https://www.frontify.com/)** | Brand management platform with digital asset libraries, style guidelines, and collaboration workflows. | **~$350M–$450M Est. Valuation** ($80.6M total funding; $50M+ ARR) | From **$100/mo** (~$1,200/yr entry baseline for small teams / 50 MAUs) | **14-day free trial** with full access to standard brand guidelines and asset library features; no permanent free tier |
+| **[Canto](https://www.canto.com/)** | Cloud-native DAM focused on visual asset organization, facial recognition, and portal distribution. | **~$200M–$300M Est. Valuation** ($35M–$52M estimated revenue; backed by JMI Equity) | From **$600/mo** (~$7,000 to $10,000/yr starting deployment) | **7-day free trial** with access to core DAM tagging, upload, and search tools; no permanent free tier |
+| **[Sketch Cloud](https://www.sketch.com/)** | Vector design application with shared workspace libraries for macOS and web collaboration. | **~$80M Valuation** ($10M–$40M estimated revenue; $20M Series A from Benchmark) | From **$12/editor/mo** billed yearly ($14/editor/mo monthly) for Standard subscription | **30-day free trial** with unlimited shared workspaces, version history, and Mac app access; unlimited free viewers forever |
+| **[Zeroheight](https://zeroheight.com/)** | Design system documentation platform for syncing Figma tokens, code snippets, and brand guidelines. | **~$40M–$60M Est. Valuation** ($10M Series A; $4M–$10M ARR) | From **$49/editor/mo** billed yearly ($59/mo monthly) for Starter tier | **Free tier (forever)**: Free plan supports 1 editor, 1 styleguide, and core integrations; plus a 14-day Starter trial |
+| **[Lingo](https://www.lingoapp.com/)** | Visual asset library with Kits and Portals for distributing brand assets and UI components. | **Bootstrapped / Early Stage** (~$1.1M estimated ARR) | From **$80/mo** billed monthly (includes Kits, Portals, and core asset sharing) | **30-day free trial** with full platform capabilities and unlimited shared kits; no permanent free tier |
 
 ## Open-Source GitHub Projects
 
