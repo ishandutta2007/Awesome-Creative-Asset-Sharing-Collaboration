@@ -20,7 +20,7 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 
 
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding per-seat or per-GB SaaS fees, and controlling creative data. The open-source landscape is anchored by **Penpot** (the full-stack design platform with 49K+ stars and self-hosting), **Longpoint** (the API-first DAM with AI search), and **Unopim** (the Laravel-based PIM/DAM), with **Aurora** serving design system documentation and **Initiative** providing shared workspace collaboration.
+**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, avoiding per-seat or per-GB SaaS fees, and controlling creative data. The open-source landscape is anchored by **Penpot** (the full-stack design platform with 49K+ GitHub_Stars and self-hosting), **Longpoint** (the API-first DAM with AI search), and **Unopim** (the Laravel-based PIM/DAM), with **Aurora** serving design system documentation and **Initiative** providing shared workspace collaboration.
 
 
 
@@ -58,31 +58,31 @@ The global Digital Asset Management (DAM) and creative collaboration market is e
 
 
 
-- **[Penpot](https://github.com/penpot/penpot)** [![GitHub Stars](https://img.shields.io/github/stars/penpot/penpot?style=social&color=white)](https://github.com/penpot/penpot/stargazers)  
+- **[Penpot](https://github.com/penpot/penpot)** [![GitHub_Stars](https://img.shields.io/github/stars/penpot/penpot?style=social&color=white)](https://github.com/penpot/penpot/stargazers)  
 
-  **The open-source design and collaboration platform.** **~49,000 GitHub stars**. Full-stack design tool built on open standards (SVG, CSS, HTML, JSON)—designs are essentially visual code. **Key capabilities**: vector editing, prototyping, component libraries with design tokens, real-time collaboration with live cursors, and an inspect mode that exports production-ready CSS/SVG/HTML . **Self-hosting**: Docker, Kubernetes, or Elestio—all design data stays on your infrastructure, eliminating vendor lock-in . **Free online tier**: unlimited users at design.penpot.app . Best for design teams wanting Figma-like collaboration without subscription fees or data leaving their servers.
+  **The open-source design and collaboration platform.** **~49,000 GitHub_Stars**. Full-stack design tool built on open standards (SVG, CSS, HTML, JSON)—designs are essentially visual code. **Key capabilities**: vector editing, prototyping, component libraries with design tokens, real-time collaboration with live cursors, and an inspect mode that exports production-ready CSS/SVG/HTML . **Self-hosting**: Docker, Kubernetes, or Elestio—all design data stays on your infrastructure, eliminating vendor lock-in . **Free online tier**: unlimited users at design.penpot.app . Best for design teams wanting Figma-like collaboration without subscription fees or data leaving their servers.
 
 
 
-- **[Longpoint](https://github.com/longpoint-io/longpoint)** [![GitHub Stars](https://img.shields.io/github/stars/longpoint-io/longpoint?style=social&color=white)](https://github.com/longpoint-io/longpoint/stargazers)  
+- **[Longpoint](https://github.com/longpoint-io/longpoint)** [![GitHub_Stars](https://img.shields.io/github/stars/longpoint-io/longpoint?style=social&color=white)](https://github.com/longpoint-io/longpoint/stargazers)  
 
   **The extensible, self-hosted DAM.** **FSL-1.1-Apache-2.0** licensed (converts to Apache 2.0 after two years; SDK and plugins are MIT). **Media pipeline**: upload and storage with multiple backends, automatic transcoding and thumbnail generation, URL signing, and CDN integration. **Intelligent organization**: semantic search using natural language, automatic classification with scene detection and tagging, and multimodal understanding across images, video, audio, and documents. **Bring your own models**: use Claude, GPT, open-source models, or your own. **API-first**: documented REST API with TypeScript SDK. Best for teams wanting a self-hosted DAM with modern AI features and full infrastructure control.
 
 
 
-- **[Unopim](https://github.com/unopim/unopim)** [![GitHub Stars](https://img.shields.io/github/stars/unopim/unopim?style=social&color=white)](https://github.com/unopim/unopim/stargazers)  
+- **[Unopim](https://github.com/unopim/unopim)** [![GitHub_Stars](https://img.shields.io/github/stars/unopim/unopim?style=social&color=white)](https://github.com/unopim/unopim/stargazers)  
 
   **The Laravel-based PIM/DAM.** MIT licensed. **~10,955 stars**. Product Information Management and Digital Asset Management platform built on Laravel—manages, enriches, and scales product data and digital assets beyond 10 million products. **Free forever**. Best for e-commerce teams needing to manage product assets alongside catalog data in a single self-hosted platform.
 
 
 
-- **[Aurora (Appian Design System)](https://github.com/appian-design/aurora)** [![GitHub Stars](https://img.shields.io/github/stars/appian-design/aurora?style=social&color=white)](https://github.com/appian-design/aurora/stargazers)  
+- **[Aurora (Appian Design System)](https://github.com/appian-design/aurora)** [![GitHub_Stars](https://img.shields.io/github/stars/appian-design/aurora?style=social&color=white)](https://github.com/appian-design/aurora/stargazers)  
 
   **The design system documentation platform.** Centralized, developer-accessible design system documentation that makes design guidance available directly within coding environments through AI assistants and MCP (Model Context Protocol) servers. **Contents**: components with usage guidelines and code examples, patterns, layouts, branding (colors, typography, iconography), accessibility guidelines, and content style guides. **Built with**: MkDocs, Python, and GitHub workflows. Best for teams that want their design system to be both human-readable and machine-accessible to AI coding assistants.
 
 
 
-- **[Initiative](https://github.com/beyonders-studio/initiative)** [![GitHub Stars](https://img.shields.io/github/stars/beyonders-studio/initiative?style=social&color=white)](https://github.com/beyonders-studio/initiative/stargazers)  
+- **[Initiative](https://github.com/beyonders-studio/initiative)** [![GitHub_Stars](https://img.shields.io/github/stars/beyonders-studio/initiative?style=social&color=white)](https://github.com/beyonders-studio/initiative/stargazers)  
 
   **The self-hosted shared workspace.** A single Docker image (`ghcr.io/beyonders-studio/initiative`) run beside Postgres. **Features**: projects and tasks with board/table/calendar views, files with real-time editing (documents, spreadsheets, whiteboards), calendars, wikis, galleries, and dashboards. **Communities and sharing** down to single project or file level. **Registry**: signed catalog of plug-ins and dashboards. **Apps**: iPhone, Android, Windows, Mac, Linux, and installable web app. Best for teams wanting a broader collaboration workspace that includes asset sharing alongside project management.
 
